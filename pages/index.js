@@ -3,6 +3,12 @@ import Head from "next/head";
 import Image from "next/image";
 import { ChevronDownIcon } from "@heroicons/react/outline";
 import {} from "@heroicons/react/outline";
+import Header from "../components/Header";
+import FirstTitle from "../components/FirstTitle";
+import CrButton from "../components/CrButton";
+import Card from "../components/Card";
+import Footer from "../components/Footer";
+import LastTitle from "../components/LastTitle";
 
 // import styles from '../styles/Home.module.css'
 
@@ -16,409 +22,32 @@ export default function Home() {
       </Head>
       <div className="py-10 px-3 sm:px-5 md:px-10">
         {/* header part */}
-        <div className="block md:flex items-center">
-          {/* left */}
-          <div className="md:mr-auto">
-            <div className="flex items-center justify-center md:justify-start">
-              <Image width={32.5} height={34.87} src="/logo.png" alt="logo" />
-              <span className="text-[#274A45] text-4xl font-bold">
-                SkillSay
-              </span>
-            </div>
-          </div>
-          {/* right */}
-          <div className="flex items-center justify-center mt-5 md:mt-0">
-            {/* menus */}
-            <div className="px-2 hidden lg:block ">
-              <p className="text-base text-[#525C65] flex items-center capitalize whitespace-nowrap">
-                Programs{" "}
-                <span className="hidden lg:block">
-                  {" "}
-                  <ChevronDownIcon className="h-5" />{" "}
-                </span>
-              </p>
-            </div>
-            <div className="px-2">
-              <p className="text-base text-[#525C65] flex items-center capitalize whitespace-nowrap">
-                for business{" "}
-                <span className="hidden lg:block">
-                  {" "}
-                  <ChevronDownIcon className="h-5" />{" "}
-                </span>
-              </p>
-            </div>
-            <div className="px-2 hidden sm:block ">
-              <p className="text-base text-[#525C65] flex items-center capitalize whitespace-nowrap">
-                skillSay.AI{" "}
-                <span className="hidden lg:block">
-                  {" "}
-                  <ChevronDownIcon className="h-5" />{" "}
-                </span>
-              </p>
-            </div>
-            <div className="px-2">
-              <p className="text-base text-[#525C65] flex items-center capitalize whitespace-nowrap">
-                job board{" "}
-              </p>
-            </div>
-            <div className="px-2 hidden sm:block ">
-              <p className="text-base text-[#525C65] flex items-center capitalize whitespace-nowrap">
-                our story{" "}
-              </p>
-            </div>
-            <div className="px-2">
-              <p className="text-base text-[#525C65] flex items-center capitalize whitespace-nowrap">
-                sign in{" "}
-              </p>
-            </div>
-            <button className="hidden sm:block  uppercase bg-[#46634D] text-xs rounded p-2 text-white whitespace-nowrap">
-              contact us
-            </button>
-          </div>
-        </div>
+        <Header />
 
         {/* section title */}
-        <div className="my-12">
-          <h1 className="uppercase font-bold text-center text-[#525C65] text-lg md:text-2xl    ">
-            assessment courses
-          </h1>
-        </div>
+        <FirstTitle />
 
         {/* courses button part */}
-        <div className="mb-3 pr-0 md:pr-28">
-          <button className="uppercase bg-[#C6E2CD] text-xs rounded px-3 text-gray-700 whitespace-nowrap tracking-widest flex items-center m-auto md:m-0 md:ml-auto shadow-lg">
-            <span>courses</span>
-            <div className="pt-2">
-              <Image src="/toggleIcon.png" alt="icon" height={20} width={20} />
-            </div>
-          </button>
-        </div>
+        <CrButton />
 
         {/* card section */}
         <div>
-          {/* <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3 px-20"> */}
           <div className="grid-layout place-items-center px-0 sm:px-20 ">
             {/* card  start*/}
-            <div
-              className=" border border-[#46634D] bg-[#46634D] bg-opacity-10 rounded
-            shadow-md p-5  h-[242px] w-[297px]"
-            >
-              <div className="flex flex-col h-[70%] justify-between">
-                <div>
-                  <p className="font-bold text-[#46634D]">
-                    Data Interpretation
-                  </p>
-                </div>
-                <div className="flex items-center">
-                  <Image
-                    height={26}
-                    width={24}
-                    src="/cartIcon.png"
-                    alt="icon"
-                  />
-                  <p className="text-xs text-[#274A45] pl-3">
-                    Soft Skills assessment aimed <br /> at validating etc...
-                  </p>
-                </div>
-                <div>
-                  <button className="px-3 py-2 w-full rounded uppercase bg-[#46634D] text-white">
-                    take the assessment
-                  </button>
-                </div>
-              </div>
-              <div className="mt-6">
-                <button className="block ml-auto px-3 py-1 uppercase bg-[#F3BB1C] text-xs rounded shadow text-white text-right tracking-widest">
-                  not started
-                </button>
-              </div>
-            </div>
 
-            {/* card  end*/}
-            {/* card  start*/}
-            <div
-              className=" border border-[#46634D] bg-[#46634D] bg-opacity-10 rounded
-            shadow-md p-5  h-[242px] w-[297px]"
-            >
-              <div className="flex flex-col h-[70%] justify-between">
-                <div>
-                  <p className="font-bold text-[#46634D]">Python</p>
-                </div>
-                <div className="flex items-center">
-                  <Image
-                    height={26}
-                    width={24}
-                    src="/cartIcon.png"
-                    alt="icon"
-                  />
-                  <p className="text-xs text-[#274A45] pl-3">
-                    Soft Skills assessment aimed <br /> at validating etc...
-                  </p>
-                </div>
-                <div>
-                  <button className="px-3 py-2 w-full rounded uppercase bg-[#46634D] text-white">
-                    take the assessment
-                  </button>
-                </div>
-              </div>
-              <div className="mt-6">
-                <button className="block ml-auto px-3 py-1 uppercase bg-[#3CC13B] text-xs rounded shadow text-white text-right tracking-widest">
-                  not started
-                </button>
-              </div>
-            </div>
-
-            {/* card  end*/}
-            {/* card  start*/}
-            <div
-              className=" border border-[#46634D] bg-[#46634D] bg-opacity-10 rounded
-            shadow-md p-5  h-[242px] w-[297px]"
-            >
-              <div className="flex flex-col h-[70%] justify-between">
-                <div>
-                  <p className="font-bold text-[#46634D]">Data Analytics</p>
-                </div>
-                <div className="flex items-center">
-                  <Image
-                    height={26}
-                    width={24}
-                    src="/cartIcon.png"
-                    alt="icon"
-                  />
-                  <p className="text-xs text-[#274A45] pl-3">
-                    Soft Skills assessment aimed <br /> at validating etc...
-                  </p>
-                </div>
-                <div>
-                  <button className="px-3 py-2 w-full rounded uppercase bg-[#46634D] text-white">
-                    take the assessment
-                  </button>
-                </div>
-              </div>
-              <div className="mt-6">
-                <button className="block ml-auto px-3 py-1 uppercase bg-[#F3BB1C] text-xs rounded shadow text-white text-right tracking-widest">
-                  not started
-                </button>
-              </div>
-            </div>
-
-            {/* card  end*/}
-            {/* card  start*/}
-            <div
-              className=" border border-[#46634D] bg-[#46634D] bg-opacity-10 rounded
-            shadow-md p-5  h-[242px] w-[297px]"
-            >
-              <div className="flex flex-col h-[70%] justify-between">
-                <div>
-                  <p className="font-bold text-[#46634D]">
-                    Data Interpretation
-                  </p>
-                </div>
-                <div className="flex items-center">
-                  <Image
-                    height={26}
-                    width={24}
-                    src="/cartIcon.png"
-                    alt="icon"
-                  />
-                  <p className="text-xs text-[#274A45] pl-3">
-                    Soft Skills assessment aimed <br /> at validating etc...
-                  </p>
-                </div>
-                <div>
-                  <button className="px-3 py-2 w-full rounded uppercase bg-[#46634D] text-white">
-                    take the assessment
-                  </button>
-                </div>
-              </div>
-              <div className="mt-6">
-                <button className="block ml-auto px-3 py-1 uppercase bg-[#F3BB1C] text-xs rounded shadow text-white text-right tracking-widest">
-                  not started
-                </button>
-              </div>
-            </div>
-
-            {/* card  end*/}
-            {/* card  start*/}
-            <div
-              className=" border border-[#46634D] bg-[#46634D] bg-opacity-10 rounded
-            shadow-md p-5  h-[242px] w-[297px]"
-            >
-              <div className="flex flex-col h-[70%] justify-between">
-                <div>
-                  <p className="font-bold text-[#46634D]">
-                    Data Interpretation
-                  </p>
-                </div>
-                <div className="flex items-center">
-                  <Image
-                    height={26}
-                    width={24}
-                    src="/cartIcon.png"
-                    alt="icon"
-                  />
-                  <p className="text-xs text-[#274A45] pl-3">
-                    Soft Skills assessment aimed <br /> at validating etc...
-                  </p>
-                </div>
-                <div>
-                  <button className="px-3 py-2 w-full rounded uppercase bg-[#46634D] text-white">
-                    take the assessment
-                  </button>
-                </div>
-              </div>
-              <div className="mt-6">
-                <button className="block ml-auto px-3 py-1 uppercase bg-[#F3BB1C] text-xs rounded shadow text-white text-right tracking-widest">
-                  not started
-                </button>
-              </div>
-            </div>
+            <Card title="Data Interpretation" />
+            <Card title="Python" buttonColor="#3CC13B" />
+            <Card title="Data Analytics" />
+            <Card title="Data Interpretation" />
+            <Card title="Data Interpretation" />
 
             {/* card  end*/}
           </div>
         </div>
         {/* Title section */}
-        <div className="mt-60 mb-20">
-          <button className="block m-auto px-5 py-2 text-white text-xs rounded uppercase bg-[#525C65]">
-            show my scores
-          </button>
-        </div>
-        {/* footer part 1 */}
-        <div>
-          <div className="block md:flex">
-            {/* left */}
-            <div className="flex-grow">
-              <div className="flex items-center justify-center md:justify-start">
-                <Image width={32.5} height={34.87} src="/logo.png" alt="logo" />
-                <span className="text-[#274A45] text-4xl font-bold">
-                  SkillSay
-                </span>
-              </div>
-            </div>
-            {/* right */}
-            <div>
-              <div className="grid gap-7 justify-items-center text-center md:text-left mt-7 md:mt-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
-                <div>
-                  <p className="uppercase text-sm text-[#274A45] font-semibold tracking-widest my-2">
-                    programs
-                  </p>
-                  <p className="capitalize text-xs text-[#525C65] my-2">
-                    {" "}
-                    Executive Masters in Data Science, <br /> AI and Machine
-                    Learning (EMDA)
-                  </p>
-                  <p className="capitalize text-xs text-[#525C65] my-2">
-                    {" "}
-                    Executive Masters in Data Analytics FinTech <br /> and
-                    DIgital Banking (EMFD)
-                  </p>
-                  <p className="capitalize text-xs text-[#525C65] my-2">
-                    {" "}
-                    Post Graduate Program in Data Science, AI <br /> and Machine
-                    Learning (PGPDA)
-                  </p>
-                  <p className="capitalize text-xs text-[#525C65] my-2">
-                    {" "}
-                    Data Analytics Engineer
-                  </p>
-                </div>
-                <div>
-                  <p className="uppercase text-sm text-[#274A45] font-semibold tracking-widest my-2">
-                    Resources
-                  </p>
-                  <p className="capitalize text-xs text-[#525C65] my-2">
-                    Skill Assessment
-                  </p>
-                  <p className="capitalize text-xs text-[#525C65] my-2">
-                    Course Catalog
-                  </p>
-                  <p className="capitalize text-xs text-[#525C65] my-2">
-                    Career Services
-                  </p>
-                  <p className="capitalize text-xs text-[#525C65] my-2">
-                    Student Successr
-                  </p>
-                  <p className="capitalize text-xs text-[#525C65] my-2">
-                    Scholarships
-                  </p>
-                </div>
-                <div>
-                  <p className="uppercase text-sm text-[#274A45] font-semibold tracking-widest my-2">
-                    Company
-                  </p>
-                  <p className="capitalize text-xs text-[#525C65] my-2">
-                    About
-                  </p>
-                  <p className="capitalize text-xs text-[#525C65] my-2">Blog</p>
-                  <p className="capitalize text-xs text-[#525C65] my-2">Jobs</p>
-                  <p className="capitalize text-xs text-[#525C65] my-2">
-                    Mentors
-                  </p>
-                </div>
-                <div>
-                  <p className="uppercase text-sm text-[#274A45] font-semibold tracking-widest my-2">
-                    community
-                  </p>
-                  <p className="capitalize text-xs text-[#525C65] my-2">
-                    Contact Us
-                  </p>
-                  <p className="capitalize text-xs text-[#525C65] my-2">
-                    Help and FAQ
-                  </p>
-                  <p className="capitalize text-xs text-[#525C65] my-2">Jobs</p>
-                  <p className="capitalize text-xs text-[#525C65] my-2">
-                    Forum
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* footer part 2 */}
-        <div className="border-t mt-2">
-          <div className="block md:flex items-center mt-10 text-center md:text-left">
-            {/* left */}
-            <div className="block md:flex items-center text-sm text-[#525C65] mr-auto">
-              <p className="px-2">© 2021 SkillSay.co.uk All Rights Reserved</p>
-              <p className="px-2">Privacy Policy</p>
-              <p className="px-2">Terms and Conditions</p>
-            </div>
-            {/* right */}
-            <div className="flex items-center justify-center ">
-              <div className="px-2">
-                <Image
-                  src="/facebook.svg"
-                  alt="icon"
-                  height={20.37}
-                  width={10.58}
-                />
-              </div>
-              <div className="px-2">
-                <Image
-                  src="/twitter.svg"
-                  alt="icon"
-                  height={20.37}
-                  width={10.58}
-                />
-              </div>
-              <div className="px-2">
-                <Image
-                  src="/linkedin.svg"
-                  alt="icon"
-                  height={20.37}
-                  width={10.58}
-                />
-              </div>
-              <div className="px-2">
-                <Image
-                  src="/instagram.svg"
-                  alt="icon"
-                  height={20.37}
-                  width={10.58}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <LastTitle />
+        {/* footer part  */}
+        <Footer />
       </div>
     </div>
   );
