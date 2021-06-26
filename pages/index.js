@@ -36,7 +36,7 @@ export default function Home() {
             {/* card  start*/}
 
             <Card title="Data Interpretation" />
-            <Card title="Python" buttonColor="#3CC13B" />
+            <Card title="Python" buttonColor="bg-[#3CC13B]" />
             <Card title="Data Analytics" />
             <Card title="Data Interpretation" />
             <Card title="Data Interpretation" />

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Card = ({ title, buttonColor = "#F3BB1C" }) => {
+const Card = ({ title, buttonColor = "bg-[#F3BB1C]" }) => {
   return (
     <div
       className=" border border-[#46634D] bg-[#46634D] bg-opacity-10 rounded
@@ -24,7 +24,7 @@ const Card = ({ title, buttonColor = "#F3BB1C" }) => {
       </div>
       <div className="mt-6">
         <button
-          className={`block ml-auto px-3 py-1 uppercase bg-[${buttonColor}] text-xs rounded shadow text-white text-right tracking-widest`}
+          className={`block ml-auto px-3 py-1 uppercase ${buttonColor}  text-xs rounded shadow text-white text-right tracking-widest`}
         >
           not started
         </button>
